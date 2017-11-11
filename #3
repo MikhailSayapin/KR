@@ -1,0 +1,62 @@
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std;
+
+int main()
+{
+    int i, j;
+    int varr1, varr2, sdv, x;
+    cin >> varr1 >> varr2;
+    int arr[varr1][varr2];
+    for (i = 0; i < k; i++)
+        for (j = 0; j < l; j++)
+            cin >> arr[i][j];
+    i = j = 0;
+    cin >> sdv;
+    for (x = 0; x < sdv; x++)
+        while (true) {
+            swap(a[0][0], a[i][j]);
+            if (i == 0) 
+            if (j == varr2 - 1) {
+                i++;
+                continue;
+            }
+            else if (i == 0) {
+                j++;
+                continue;
+            }
+            if (i == k - 1) 
+            if (j == l - 1) {
+                j--;
+                continue;
+            }
+            else if (j == l - 1) {
+                i++;
+                continue;
+            }
+            if (i == k - 1) 
+            if(j == 0){
+                i--;
+                continue;
+            }
+            else if (i == k - 1) {
+                j--;
+                continue;
+            }
+            if (i == 1) 
+            if (j == 0) {
+                i = j = 0;
+                break;
+            }
+            else if (j == 0) {
+                i--;
+                continue;
+            }
+        }
+    for (i = 0; i < varr1; i++) {
+        for (j = 0; j < varr2; j++)
+            cout << arr[i][j] << " ";
+    }
+    return 0;
+}
