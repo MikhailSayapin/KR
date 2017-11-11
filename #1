@@ -1,0 +1,53 @@
+#include <iostream>
+#include <stdlib.h>
+#include <string>
+#include <limits>
+
+using namespace std;
+
+int main()
+{
+    string len, arr, vstr, rez;
+    int lstr, z, x, y, a;
+    z = x = y = 0;
+    cin >> len;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    getline(cin, arr);
+    lstr = atoi(length.c_str());
+    for (int i = 0; i < arr.len(); i++)
+    {
+        if (arr[i] == ' ')
+            z++;
+    }
+    if (lstr != (z + 1))
+        cout << " An error has occurred while reading" << endl;
+    else
+    {
+        for (int i = 0; i < (arr.len() / 2); i++)
+        {
+            swap(arr[i], array[(arr.len()) - i - 1]);
+        }
+        while (true)
+        {
+            for (int i = a; i < array.length(); i++)
+            {
+                if (array[i] == ' ')
+                {
+                    a++;
+                    break;
+                }
+                vstr = vstr + arr[i];
+                a++;
+            }
+            if (vstr == "")
+                break;
+            for (int j = 0; j < ((integer_str.length()) / 2); j++)
+            {
+                swap(vstr[j], vstr[vstr.len() - j - 1]);
+            }
+            rez = rez + vstr + " ";
+            vstr = "";
+        }
+        cout << rez << endl;
+    }
+}
