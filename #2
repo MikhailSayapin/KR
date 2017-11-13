@@ -1,0 +1,43 @@
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std;
+
+int main()
+{
+    int i, n, z;
+    cin >> n;
+    if (n <= 0)
+    {
+        cout << "err";
+        return 0;
+    }
+    int arr1[n];
+
+    for (i = 0; i < n; i++)
+    {
+        cin >> arr1[i];
+    }
+    cin >> z;
+    int x[z - 1], y[n - z - 1];
+
+    for (i = 0; i < z; i++)
+    {
+        x[i] = arr1[i];
+    }
+
+    for (i = 0; i < n - z; i++)
+    {
+        y[i] = arr1[i + z];
+    }
+
+    for (i = 0; i < n - z; i++)
+    {
+        cout << y[i] << " ";
+    }
+    for (i = 0; i < z; i++)
+    {
+        cout << x[i] << " ";
+    }
+    return 0;
+}
